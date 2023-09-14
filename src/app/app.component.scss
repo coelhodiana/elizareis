@@ -8,6 +8,7 @@
 
 .footer {
   background-color: #b26345;
+  position: relative;
 
   &__logo {
     height: 6rem;
@@ -15,16 +16,22 @@
   }
 
   &__icons > a {
-    color: #E0C7AB;
+    color: #f2ad6a;
+    font-size: 2rem;
+  }
+
+  &__icons > a:hover {
+    color: white;
   }
 
   &__links {
     ul {
-      color: #f2ad6a;
-
-      li {
-        text-decoration: none;
-      }
+      list-style: none;
     }
+  }
+
+  &__go-to-top{
+    position: absolute;
+    margin: 2rem;
   }
 }
