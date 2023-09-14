@@ -1,12 +1,12 @@
 <main>
-  <section class="hero container-fluid mb-3 p-0">
+  <section class="hero container-fluid mb-3 p-0" (click)="goTo()">
     <div class="hero__img" alt="Imagem do Projeto Apê DS"></div>
     <p class="p-2">Projeto Apê DS</p>
   </section>
 
   <section class="projetos container-fluid" id="projetos">
     <div class="projetos row">
-      <div class="col-sm p-0 mr-2">
+      <div class="col-sm p-0 mr-md-2" (click)="goTo()">
         <img
           src="./../../../assets/projetos/casa-sr/principal.jpg"
           class="projetos__img"
@@ -15,13 +15,33 @@
         <p class="p-2">Projeto Casa SR</p>
       </div>
 
-      <div class="col-sm p-0 ml-2">
+      <div class="col-sm p-0 ml-md-2" (click)="goTo()">
         <img
           src="./../../../assets/projetos/casa-cf/principal.jpg"
           class="projetos__img"
           alt="Imagem do Projeto Casa CF"
         />
         <p class="p-2">Projeto Casa CF</p>
+      </div>
+    </div>
+
+    <div class="projetos row" (click)="goTo()">
+      <div class="col-sm p-0 mr-md-2">
+        <img
+          src="./../../../assets/projetos/studio-ah/principal.jpeg"
+          class="projetos__img"
+          alt="Image do Projeto Fisiostudio AH"
+        />
+        <p class="p-2">Projeto Fisiostudio AH</p>
+      </div>
+
+      <div class="col-sm p-0 ml-md-2" (click)="goTo()"> 
+        <img
+          src="./../../../assets/projetos/studio-js/principal.jpg"
+          class="projetos__img"
+          alt="Imagem do Projeto Studio JS"
+        />
+        <p class="p-2">Projeto Studio JS</p>
       </div>
     </div>
   </section>
@@ -55,50 +75,44 @@
     </div>
   </section>
 
-  <!-- <section id="metodologia" class="container">
+  <section class="instagram container mb-5">
+    <h3 class="mb-4">
+      Acompanhe pelo no Instagram
+      <span class="highlight">@elizareisarquiteta</span>
+    </h3>
+
     <div class="row">
-      <div class="col">
-        <h1>Minha metodologia é orientada pela busca por designs atemporais</h1>
-      </div>
-      <div class="col">
-        Na concepção de cada projeto, priorizo a combinação perfeita entre
-        estética, funcionalidade e sustentabilidade. Meu compromisso é criar
-        espaços que vão além do óbvio, aproveitando cada centímetro disponível
-        de forma inteligente e criativa.
+      <div class="instagram__img-container col-md">
+        <img
+          src="./../../../assets/projetos/casa-sr/principal.jpg"
+          class="instagram__img"
+          alt="Image do Projeto Casa SR"
+        />
       </div>
 
-      <div class="row">
-        <div class="col">
-          <h2>Pesquisa</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            varius enim in eros elementum tristique.
-          </p>
-        </div>
-        <div class="col">
-          <h2>Pesquisa</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            varius enim in eros elementum tristique.
-          </p>
-        </div>
-        <div class="col">
-          <h2>Pesquisa</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            varius enim in eros elementum tristique.
-          </p>
-        </div>
+      <div class="instagram__img-container col-md">
+        <img
+          src="./../../../assets/projetos/casa-cf/principal.jpg"
+          class="instagram__img"
+          alt="Imagem do Projeto Casa CF"
+        />
+      </div>
+
+      <div class="instagram__img-container col-md">
+        <img
+          src="./../../../assets/projetos/casa-sr/principal.jpg"
+          class="instagram__img"
+          alt="Image do Projeto Casa SR"
+        />
+      </div>
+
+      <div class="instagram__img-container col-md">
+        <img
+          src="./../../../assets/projetos/casa-cf/principal.jpg"
+          class="instagram__img"
+          alt="Imagem do Projeto Casa CF"
+        />
       </div>
     </div>
   </section>
-
-  <section class="cta container">
-    <div class="jumbotron">
-      <h1>
-        Se você está buscando transformar um espaço existente ou criar um novo
-        projeto, estou aqui para te ajudar a concretizar sua visão.
-      </h1>
-    </div>
-  </section> -->
 </main>
