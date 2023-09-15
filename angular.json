@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "boilerplate-angular": {
+    "elizareis": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/boilerplate-angular",
+            "outputPath": "dist/elizareis",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -75,10 +75,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "boilerplate-angular:build:production"
+              "browserTarget": "elizareis:build:production"
             },
             "development": {
-              "browserTarget": "boilerplate-angular:build:development"
+              "browserTarget": "elizareis:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -86,7 +86,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "boilerplate-angular:build"
+            "browserTarget": "elizareis:build"
           }
         },
         "test": {
@@ -101,11 +101,11 @@
         "cypress-run": {
           "builder": "@cypress/schematic:cypress",
           "options": {
-            "devServerTarget": "boilerplate-angular:serve"
+            "devServerTarget": "elizareis:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "boilerplate-angular:serve:production"
+              "devServerTarget": "elizareis:serve:production"
             }
           }
         },
@@ -119,13 +119,13 @@
         "e2e": {
           "builder": "@cypress/schematic:cypress",
           "options": {
-            "devServerTarget": "boilerplate-angular:serve",
+            "devServerTarget": "elizareis:serve",
             "watch": true,
             "headless": false
           },
           "configurations": {
             "production": {
-              "devServerTarget": "boilerplate-angular:serve:production"
+              "devServerTarget": "elizareis:serve:production"
             }
           }
         },
@@ -141,7 +141,7 @@
       }
     }
   },
-  "defaultProject": "boilerplate-angular",
+  "defaultProject": "elizareis",
   "cli": {
     "defaultCollection": "@angular-eslint/schematics"
   }
